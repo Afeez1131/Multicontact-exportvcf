@@ -1,1 +1,1 @@
-web: gunicorn Referral.wsgi --log-file -
+web: gunicorn ContactSaver.wsgi --log-file -
