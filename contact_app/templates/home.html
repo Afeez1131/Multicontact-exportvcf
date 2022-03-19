@@ -4,7 +4,7 @@
 
 <form method="post">
     {% csrf_token %}
-    <div class="form-group">
+    <div class="form-group" id='get-started'>
     <label for="exampleFormControlInput1">The Name to save the contacts with</label>
     <input type="text" class="form-control" name="group_name" placeholder="Canva Training Group">
   </div>
@@ -13,7 +13,8 @@
     <textarea class="form-control" name="contacts" rows="5"></textarea>
   </div>
 
-    <input type="submit" value="Export" class="btn btn-primary">
+
+    <input type="submit" value="Export as VCF" class="btn btn-primary">
 </form>
 {% endblock %}
 
